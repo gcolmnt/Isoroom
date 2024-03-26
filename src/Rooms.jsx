@@ -274,6 +274,10 @@ export function Rooms()
   // Start >>> Kitchen
   const handleAnimationStartToKitchen = () => {
     document.body.style.cursor = 'auto' 
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Start Out
     gsap.to(roomStart.current.position, {
       x: 0, y: 10, z: 0, duration: speed,
@@ -301,10 +305,6 @@ export function Rooms()
         setExistDoorLeft(true)
         setExistDoorRight(true)
         setExistStart(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Kitchen')
         setStartToKitchen(false)
       }
@@ -314,6 +314,10 @@ export function Rooms()
   // Start >>> LivingRoom
   const handleAnimationStartToLivingroom = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     setStartOpenLeftDoor(false)
     // Start Out
     gsap.to(roomStart.current.position, {
@@ -357,10 +361,6 @@ export function Rooms()
       x: 0, y: 0, z: 0, duration: speed * 1.5,
       onComplete: () => {
         setExistReturnRight(true)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Livingroom')
         setStartToLivingroom(false)
       }
@@ -370,6 +370,10 @@ export function Rooms()
   // Livingroom >>> BedRoom
   const handleAnimationLivingroomToBedroom = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Livingroom Out
     gsap.to(roomLivingroom.current.position, {
       x: 0, y: -10, z: 0, duration: speed,
@@ -401,10 +405,6 @@ export function Rooms()
       onComplete: () => {
         setExistReturnRight(true)
         setExistLivingroom(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Bedroom')
         setLivingroomToBedroom(false)
       }
@@ -414,6 +414,10 @@ export function Rooms()
   // Livingroom >>> BathRoom
   const handleAnimationLivingroomToBathroom = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Livingroom Out
     gsap.to(roomLivingroom.current.position, {
       x: 0, y: -10, z: 0, duration: speed,
@@ -449,10 +453,6 @@ export function Rooms()
         setExistReturnLeft(true)
         setExistReturnRight(true)
         setExistLivingroom(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Bathroom')
         setLivingroomToBathroom(false)
       }
@@ -462,6 +462,10 @@ export function Rooms()
   // LivingRoom >>> Start
   const handleAnimationLivingroomToStart = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Livingroom Out
     gsap.to(roomLivingroom.current.position, {
       x: 0, y: -10, z: 0, duration: speed,
@@ -495,10 +499,6 @@ export function Rooms()
       x: 0, y: 0, z: 0, duration: speed * 1.5,
       onComplete: () => {
         setExistLivingroom(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Start')
         setLivingroomToStart(false)
       }
@@ -508,6 +508,10 @@ export function Rooms()
   // Kitchen >>> Bathroom
   const handleAnimationKitchenToBathroom = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Kitchen Out
     gsap.to(roomKitchen.current.position, {
       x: 0, y: -10, z: 0, duration: speed,
@@ -544,10 +548,6 @@ export function Rooms()
         setExistReturnLeft(true)
         setExistReturnRight(true)
         setExistKitchen(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Bathroom')
         setKitchentoBathroom(false)
       }
@@ -557,6 +557,10 @@ export function Rooms()
   // Kitchen >>> StudyRoom
   const handleAnimationKitchenToStudyroom = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Kitchen Out
     gsap.to(roomKitchen.current.position, {
       x: 0, y: -10, z: 0, duration: speed,
@@ -588,10 +592,6 @@ export function Rooms()
       onComplete: () => {
         setExistReturnLeft(true)
         setExistKitchen(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Studyroom')
         setKitchentoStudyroom(false)
       }
@@ -601,6 +601,10 @@ export function Rooms()
   // Kitchen >>> Start
   const handleAnimationKitchentoStart = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Kitchen Out
     gsap.to(roomKitchen.current.position, {
       x: 0, y: -10, z: 0, duration: speed,
@@ -634,10 +638,6 @@ export function Rooms()
       x: 0, y: 0, z: 0, duration: speed * 1.5,
       onComplete: () => {
         setExistKitchen(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Start')
         setKitchentoStart(false)
       }
@@ -647,6 +647,10 @@ export function Rooms()
   // Bathroom >>> LivingRoom
   const handleAnimationBathroomToLivingroom = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Bathroom Out
     gsap.to(roomBathroom.current.position, {
       x: 0, y: 10, z: 0, duration: speed,
@@ -690,10 +694,6 @@ export function Rooms()
       onComplete: () => {
         setExistReturnRight(true)
         setExistBathroom(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Livingroom')
         setBathroomToLivingroom(false)
       }
@@ -703,6 +703,10 @@ export function Rooms()
   // Bathroom >>> Kitchen
   const handleAnimationBathroomToKitchen = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Bathroom Out
     gsap.to(roomBathroom.current.position, {
       x: 0, y: 10, z: 0, duration: speed,
@@ -730,10 +734,6 @@ export function Rooms()
         setExistDoorLeft(true)
         setExistDoorRight(true)
         setExistBathroom(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Kitchen')
         setBathroomToKitchen(false)
       }
@@ -743,6 +743,10 @@ export function Rooms()
   // BedRoom >>> LivingRoom
   const handleAnimationBedroomToLivingroom = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Bedroom Out
     gsap.to(roomBedroom.current.position, {
       x: 0, y: 10, z: 0, duration: speed,
@@ -786,10 +790,6 @@ export function Rooms()
       onComplete: () => {
         setExistReturnRight(true)
         setExistBedroom(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Livingroom')
         setBedroomToLivingroom(false)
       }
@@ -799,6 +799,10 @@ export function Rooms()
   // StudyRoom >>> Kitchen
   const handleAnimationStudyroomToKitchen = () => {
     document.body.style.cursor = 'auto'
+    setActiveDoorLeft(false)
+    setActiveDoorRight(false)
+    setActiveReturnLeft(false)
+    setActiveReturnRight(false)
     // Studyroom Out
     gsap.to(roomStudyroom.current.position, {
       x: 0, y: 10, z: 0, duration: speed,
@@ -826,10 +830,6 @@ export function Rooms()
         setExistDoorLeft(true)
         setExistDoorRight(true)
         setExistStudyroom(false)
-        setActiveDoorLeft(false)
-        setActiveDoorRight(false)
-        setActiveReturnLeft(false)
-        setActiveReturnRight(false)
         setCurrentRoom('Kitchen')
         setStudyroomToKitchen(false)
       }
@@ -907,17 +907,25 @@ export function Rooms()
      */
     // START
     if (currentRoom === 'Start' && startDoorLeftHovered) {
-      setStartOpenLeftDoor(true)
+      setTimeout(() => {
+        setStartOpenLeftDoor(true)
+      }, 10)
     }
     if (currentRoom === 'Start' && startDoorRightHovered) {
+      setTimeout(() => {
       setStartOpenRightDoor(true)
+    }, 10)
     }
     // LIVINGROOM
     if (currentRoom === 'Livingroom' && livingroomDoorLeftHovered) {
+      setTimeout(() => {
       setLivingroomOpenLeftDoor(true)
+    }, 10)
     }
     if (currentRoom === 'Livingroom' && livingroomDoorRightHovered) {
+      setTimeout(() => {
       setLivingroomOpenRightDoor(true)
+    }, 10)
     }
 
     // ROOMS
@@ -930,6 +938,7 @@ export function Rooms()
       setDoorLeftHovered(false)
       setDoorRightHovered(false)
       setKitchenPosition([10, 0, -10])
+      console.log("hop!")
       setLeftDoorPosition([-1, 1.15, -0.95])
       setRightDoorPosition([1, 1.15, -0.95])
       setDoorScale([0.1, 1.9, 0.9])
